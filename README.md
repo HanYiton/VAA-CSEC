@@ -4,7 +4,9 @@ Official code accompanying the paper:
 
 > **VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction**
 >
-> Anonymous submission
+> Yitong Han, Nankai Lin†, Juan Luo, Hongyan Wu, Lianxi Wang, Shengyi Jiang
+>
+> † corresponding author
 
 ## Overview
 
@@ -52,9 +54,8 @@ The code in this release is provided under the Apache-2.0 license. See `YuYi/LIC
 ```bibtex
 @inproceedings{vaa-csec,
   title     = {VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction},
-  author    = {Anonymous},
-  booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
-  year      = {2026},
-  note      = {Anonymous submission}
+  author    = {Han, Yitong and Lin, Nankai and Luo, Juan and Wu, Hongyan and Wang, Lianxi and Jiang, Shengyi},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026}
 }
 ```

@@ -2,7 +2,11 @@
 
 This directory contains the reference implementation for
 
-> **VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction** (anonymous submission)
+> **VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction**
+>
+> Yitong Han, Nankai Lin†, Juan Luo, Hongyan Wu, Lianxi Wang, Shengyi Jiang
+>
+> † corresponding author
 
 It provides the task-specific reward function, the **Group-Level Relative Policy Optimization (GLPO)** plugin for ms-swift, the SFT/RL configuration files, and the ChERRANT-based inference & evaluation scripts used in the paper.
 
@@ -290,9 +294,8 @@ Apache-2.0. See [`LICENSE`](LICENSE).
 ```bibtex
 @inproceedings{vaa-csec,
   title     = {VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction},
-  author    = {Anonymous},
-  booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
-  year      = {2026},
-  note      = {Anonymous submission}
+  author    = {Han, Yitong and Lin, Nankai and Luo, Juan and Wu, Hongyan and Wang, Lianxi and Jiang, Shengyi},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026}
 }
 ```
