@@ -1,0 +1,14 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: Qwen/Qwen3.5-4B
+adapter_name_or_path: ../../YuYi/output_grpo/v31-20260323-134753/checkpoint-3255
+# adapter_name_or_path: ../../YuYi/output_grpo/v4-20260313-145024/checkpoint-3000
+template: qwen3
+trust_remote_code: true
+
+### export
+export_dir: ../../YuYi/model/grpo/v2/lm
+export_size: 5
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false

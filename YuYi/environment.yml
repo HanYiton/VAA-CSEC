@@ -1,0 +1,9 @@
+name: swift
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - gcc_linux-64
+  - gxx_linux-64
+  - coreutils
+prefix: /opt/conda/envs/swift

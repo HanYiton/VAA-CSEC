@@ -1,0 +1,22 @@
+# --- local Python virtual environments ---
+.venv/
+errant_env/
+
+# --- Python caches ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- IDE / local tooling ---
+.idea/
+
+# --- experiment logs ---
+wandb/
+
+# --- vendored third-party git metadata (renamed, kept locally) ---
+.git.bak
+.git.bak/
+
+# --- secrets / local env ---
+.env
+.env.*

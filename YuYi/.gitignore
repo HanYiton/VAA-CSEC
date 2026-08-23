@@ -1,0 +1,48 @@
+# 基础Python排除
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Verl/LLM训练排除
+# 模型权重（绝对不提交到Git！）
+*.bin
+*.ckpt
+*.pth
+*.safetensors
+models/
+checkpoints/
+# 训练日志/缓存
+logs/
+wandb/
+swanlab/
+tensorboard/
+# 数据文件（大样本/数据集）
+/data/
+datasets/
+processed_data/
+# 推理/训练临时文件
+*.tmp
+*.lock
+# 硬件相关缓存
+nvidia_smi_log/
+# 配置文件中的敏感信息（如有）
+*.env
+*.secret
