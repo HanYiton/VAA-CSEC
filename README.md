@@ -1,13 +1,5 @@
 # VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
-Official code accompanying the paper:
-
-> **VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction**
->
-> Yitong Han, Nankai Lin†, Juan Luo, Hongyan Wu, Lianxi Wang, Shengyi Jiang
->
-> † corresponding author
-
 ## Overview
 
 VAA-CSEC is a multi-stage framework for **Chinese Semantic Error Correction (CSEC)**. It combines four stages:
