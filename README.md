@@ -50,10 +50,6 @@ python scripts/CSED_test.py --model_path <MODEL> --input <test.json> \
 The code in this release is provided under the Apache-2.0 license. See `YuYi/LICENSE` and the licenses of the bundled third-party projects (`LLaMAFactory/`, `YuYi/third_party/`, `YuYi/MuCGEC/`).
 
 ## Citation
-
-```bibtex
-@inproceedings{vaa-csec,
-  title     = {VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction},
   author    = {Han, Yitong and Lin, Nankai and Luo, Juan and Wu, Hongyan and Wang, Lianxi and Jiang, Shengyi},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
   year      = {2026}
