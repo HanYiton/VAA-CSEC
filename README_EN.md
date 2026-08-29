@@ -16,6 +16,10 @@ Hello everyone! Since the framework was developed incrementally through a series
 
 If you encounter any problems during reproduction or discover a bug, please feel free to open an issue or contact me directly via [email](mailto:20231003317@mail.gdufs.edu.cn). I will try my best to address the issue when I have time.
 
+## Model Release
+
+The model trained on the CSED-C dataset has been released on Hugging Face. [Click here to access the model](https://huggingface.co/Hanyiton/VAA-CSEC/tree/main)
+
 ## Environment Setup
 
 We recommend creating two separate Conda environments: one for **SFT training with LLaMAFactory**, and the other for **GRPO/GLPO training with ms-swift**.
