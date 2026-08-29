@@ -1,5 +1,4 @@
 # <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
------------------
 **VAA-CSEC** 是一个面向中文语义纠错任务的多阶段训练框架，它结合了CoT蒸馏、监督微调（SFT）、强化学习（RL）和自一致性解码（self-consistency）。 在强化学习阶段，我们进一步引入了GLPO，它根据个体展开奖励与投票聚合组奖励之间的差距重新分配GRPO优势，使强化学习训练目标与推理时使用的自一致性目标对齐。
 
 在CSED-C和NaSGEC-Exam数据集上的实验表明，VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47.72%，在所有方法中实现了最高的召回率42.15%，并在NaSGEC-Exam数据集上创造了41.55%的F0.5值的新最佳结果。
