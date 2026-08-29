@@ -20,3 +20,13 @@ wandb/
 # --- secrets / local env ---
 .env
 .env.*
+
+# --- model weights (hosted separately; not committed) ---
+model/
+
+# --- original / full-text data (download CSED-C yourself) ---
+data/NaSGEC/
+data/CSED-C/train.json
+data/CSED-C/cot_sft.json
+data/CSED-C/sft_cot_alpaca.json
+data/CSED-C/sft_no_cot_alpaca.json

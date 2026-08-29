@@ -1,27 +1,3 @@
-"""
-GLPO Simplified for ms-swift 4.0.1
-====================================
-精简版: 移除 M 维度, 等价于 M=1
-
-核心算法:
-    base_adv_{ij} = (R_ij - mean_K(R_i)) / std_K(R_i)     # K=组内归一化
-    bonus_{ij}    = max(0, R_ij - R_i(G)) * bonus_scale    # 选择性 vote 增益
-    glpo_adv      = base_adv + bonus
-
-数据假设:
-    - num_generations = K (swift 配置)
-    - 每 K 个连续 sample 对应一个 prompt 的 K 次采样
-    - prompt 不需要复制 (无需 prepare_glpo_data.py)
-
-环境变量:
-    GLPO_K=8                每组采样数 (= num_generations)
-    GLPO_BONUS_SCALE=1.0    bonus 缩放系数
-    GLPO_STD_EPS=1e-4       std 下界, 防止除零
-    GLPO_DEBUG=1            打印日志
-    GLPO_DEBUG_FIRST_STEPS=3 前几个 step 打印 sample-level 数据
-    GLPO_GROUP_COL_IDX=1    group reward 在 rewards_per_func 的列号
-"""
-
 import os
 import re
 import unicodedata

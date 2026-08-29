@@ -1,66 +1,28 @@
-# VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction
+# 来自作者
+大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性和可复现性较差，尽管现在有所改进，但可能还存在各种问题。若大家复现过程中有任何问题，欢迎提issue或直接通过[我的邮箱](https://github.com/modelscope/ms-swift/issues/8188)讨论
 
-Official code accompanying the paper:
+# 环境配置
+推荐创建两个conda环境，分别进行LLaMAFactory的SFT训练和ms-swift的GRPO/GLPO训练
 
-> **VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction**
->
-> Yitong Han, Nankai Lin†, Juan Luo, Hongyan Wu, Lianxi Wang, Shengyi Jiang
->
-> † corresponding author
+环境创建流程请分别参考LLaMAFactory和ms-swift的官方文档。
 
-## Overview
+你可能会用到：
+1. ms-swift官方文档中[Qwen3.5最佳实践说明](https://swift.readthedocs.io/zh-cn/latest/BestPractices/Qwen3_5-Best-Practice.html#rl)
 
-VAA-CSEC is a multi-stage framework for **Chinese Semantic Error Correction (CSEC)**. It combines four stages:
+2. 对于Qwen3.5中vllm与transformers版本不兼容问题，可见[issue](https://github.com/modelscope/ms-swift/issues/8188)
 
-1. **CoT distillation** — a strong teacher (Qwen3.5-27B) generates chain-of-thought rationales, which are verified by DeepSeek-V3.2;
-2. **Supervised Fine-Tuning (SFT)** — Qwen3.5-4B is fine-tuned with LoRA via LLaMA-Factory to follow the `<think>...</think><answer>...</answer>` format;
-3. **Group-Level Relative Policy Optimization (GLPO)** — a GRPO variant whose advantages are reallocated by the margin between each rollout's reward and the vote-aggregated group reward;
-4. **Self-consistency decoding** — the final correction is selected by majority voting over `N` stochastic samples.
+# 数据处理
+以CSED-C为例，蒸馏出的思维链保存在data\CSED-C\cot_sft_deidentified.json
 
-Under 32-vote decoding, VAA-CSEC reaches **47.72% F0.5 on CSED-C** (highest recall, 42.15%) and **41.55% F0.5 on NaSGEC-Exam** (new state of the art).
+为避免侵权，请自行前往[CSED-C仓库](https://github.com/wyxstriker/CSED/tree/main/CSED-C)下载原数据，然后通过YuYi\scripts\deidentify_cot_sft.py还原为SFT训练数据。
 
-## Repository layout
 
-| Path | Contents |
-| --- | --- |
-| `YuYi/` | Main pipeline: task-specific reward function, GLPO plugin, training configs, and ChERRANT-based inference/evaluation scripts. See [`YuYi/README.md`](YuYi/README.md). |
-| `LLaMAFactory/` | [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), used for the SFT stage. |
-| `model/` | Released VAA-CSEC checkpoint trained only on CSED-C (~8.66 GB, bf16 safetensors). See [`model/README.md`](model/README.md). |
+若想从0开始创建数据，请参考论文中的3.3 CoT Distillation，但由于大模型生成的不稳定性，新数据可能会与论文有一定差别。
 
-## Model
+由于NaSGEC数据初始并非alpaca格式，暂时还没想到好的还原方法，若有需要可以联系我获取蒸馏出的思维链部分。
 
-The released checkpoint is in [`model/`](model/). It is the VAA-CSEC (GLPO) model **trained only on the CSED-C training set** — it was not trained on NaSGEC-Exam. Weights are HuggingFace `safetensors` in `bfloat16` (~8.66 GB). See [`model/README.md`](model/README.md).
+# SFT训练
+请参考LLaMAFactory官方文档的标准训练流程，所使用模型以及超参数设置均在论文Experiment部分说明。
 
-## Quick start
-
-The complete reproduction guide is in [`YuYi/README.md`](YuYi/README.md). At a high level:
-
-```bash
-# 1) SFT with LLaMA-Factory (fill in model + dataset in the config first)
-cd LLaMAFactory/LLaMA-Factory
-llamafactory-cli train examples/train_lora/qwen3.5_lora_sft.yaml
-
-# 2) GLPO reinforcement learning with ms-swift (see YuYi/README.md for the command)
-cd ../../YuYi
-
-# 3) Inference + ChERRANT evaluation (self-consistency, 32 votes)
-python scripts/CSED_test.py --model_path ../model --input <test.json> \
-    --output <pred.jsonl> --use_vllm \
-    --cherrant_dir MuCGEC/scorers/ChERRANT \
-    --voting_samples 32 --voting_temperature 1.0
-```
-
-## License
-
-The code in this release is provided under the Apache-2.0 license. See `YuYi/LICENSE` and the licenses of the bundled third-party projects (`LLaMAFactory/`, `YuYi/third_party/`, `YuYi/MuCGEC/`).
-
-## Citation
-
-```bibtex
-@inproceedings{vaa-csec,
-  title     = {VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction},
-  author    = {Han, Yitong and Lin, Nankai and Luo, Juan and Wu, Hongyan and Wang, Lianxi and Jiang, Shengyi},
-  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
-  year      = {2026}
-}
-```
+# GRPO/GLPO训练
+请参考YuYi\README.md
