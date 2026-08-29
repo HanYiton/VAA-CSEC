@@ -1,5 +1,11 @@
 [中文](README.md) | [English](README_EN.md)
 
+## 🙌 A Note from the Authors
+
+Hello everyone! Since the framework was developed incrementally through a series of experiments, the readability of the original implementation was relatively poor. To facilitate reproduction, I substantially refactored the codebase before open-sourcing it. However, the refactoring may have introduced issues that I have not yet discovered, such as inconsistent paths or missing code.
+
+If you encounter any problems during reproduction or discover a bug, please feel free to open an issue or [contact me](https://hanyiton.github.io/) directly via email. I will try my best to address the issue when I have time.
+
 # <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
 **VAA-CSEC** is a multi-stage training framework for Chinese Semantic Error Correction (CSEC), combining Chain-of-Thought (CoT) distillation, Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), and self-consistency decoding. During the reinforcement learning stage, we introduce **Group-Level Relative Policy Optimization (GLPO)**, which reallocates GRPO advantages according to the margin between individual rollout rewards and the vote-aggregated group reward, aligning the RL training objective with the self-consistency objective used at inference time.
@@ -9,12 +15,6 @@ Experiments on **CSED-C** and **NaSGEC-Exam** show that VAA-CSEC outperforms all
 <p align="center">
   <img src="FrameWork.png" alt="VAA-CSEC Framework" width="900">
 </p>
-
-## 🙌 A Note from the Authors
-
-Hello everyone! Since the framework was developed incrementally through a series of experiments, the readability of the original implementation was relatively poor. To facilitate reproduction, I substantially refactored the codebase before open-sourcing it. However, the refactoring may have introduced issues that I have not yet discovered, such as inconsistent paths or missing code.
-
-If you encounter any problems during reproduction or discover a bug, please feel free to open an issue or [contact me](https://hanyiton.github.io/) directly via email. I will try my best to address the issue when I have time.
 
 ## Model Release
 
