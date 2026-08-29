@@ -1,10 +1,10 @@
 [English](README_EN.md) | [中文](README.md)
 
-# <img src="bullseye2.png" width="40"> VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction
+# <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
-**VAA-CSEC** is a multi-stage training framework for Chinese Semantic Error Correction (CSEC), combining Chain-of-Thought (CoT) distillation, Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), and self-consistency decoding. During the reinforcement learning stage, we further introduce **GLPO (Group-Level Relative Policy Optimization)**, which reallocates GRPO advantages according to the gap between individual rollout rewards and vote-aggregated group rewards. This aligns the RL training objective with the self-consistency objective used during inference.
+**VAA-CSEC** is a multi-stage training framework for Chinese Semantic Error Correction (CSEC), combining Chain-of-Thought (CoT) distillation, Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), and self-consistency decoding. During the reinforcement learning stage, we introduce **Group-Level Relative Policy Optimization (GLPO)**, which reallocates GRPO advantages according to the margin between individual rollout rewards and the vote-aggregated group reward, aligning the RL training objective with the self-consistency objective used at inference time.
 
-VAA-CSEC outperforms all LLM-based baseline methods on the **CSED-C** dataset, achieving an F0.5 score of **47.72%**. It also achieves the highest recall among all methods, at **42.15%**. On the **NaSGEC-Exam** dataset, VAA-CSEC establishes a new state of the art with an F0.5 score of **41.55%**.
+Experiments on **CSED-C** and **NaSGEC-Exam** show that VAA-CSEC outperforms all LLM-based baselines on CSED-C with an F0.5 of **47.72%**, achieves the highest recall of **42.15%** among all methods, and establishes a new state of the art of **41.55% F0.5** on NaSGEC-Exam.
 
 <p align="center">
   <img src="FrameWork.png" alt="VAA-CSEC Framework" width="900">
