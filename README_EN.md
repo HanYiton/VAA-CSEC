@@ -24,7 +24,7 @@ The model trained on the CSED-C dataset has been released on Hugging Face. [Clic
 
 We recommend creating two separate Conda environments: one for **SFT training with LLaMAFactory**, and the other for **GRPO/GLPO training with ms-swift**.
 
-For environment setup, please refer to the official documentation of [LLaMAFactory](https://github.com/hiyouga/LLaMA-Factory) and [ms-swift](https://github.com/modelscope/ms-swift), respectively.
+For environment setup, please refer to the official documentation of [LLaMAFactory](https://github.com/hiyouga/LLaMA-Factory) and [ms-swift](https://swift.readthedocs.io/en/latest/GetStarted/Quick-start.html), respectively.
 
 You may also find the following resources useful:
 
