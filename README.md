@@ -1,4 +1,8 @@
 [中文](README.md) | [English](README_EN.md)
+
+## 🙌来自作者
+大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性较差。为了方便复现，我在开源前进行了较大范围的重构，但可能因此产生各种未能发现的问题，如路径不一致、缺少部分代码等。若大家复现过程中有任何疑惑或发现了bug，欢迎提issue或直接通过[主页邮箱](https://hanyiton.github.io/)讨论，我会在空闲时间尽量解决！
+
 # <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 **VAA-CSEC** 是一个面向中文语义纠错任务的多阶段训练框架，它结合了CoT蒸馏、监督微调（SFT）、强化学习（RL）和自一致性解码（self-consistency）。 在强化学习阶段，我们进一步引入了GLPO（Group-Level Relative Policy Optimization），它根据个体展开奖励与投票聚合组奖励之间的差距重新分配GRPO优势，使强化学习训练目标与推理时使用的自一致性目标对齐。
 
@@ -7,9 +11,6 @@ VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47
 <p align="center">
   <img src="FrameWork.png" alt="VAA-CSEC Framework" width="900">
 </p>
-
-## 🙌来自作者
-大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性较差。为了方便复现，我在开源前进行了较大范围的重构，但可能因此产生各种未能发现的问题，如路径不一致、缺少部分代码等。若大家复现过程中有任何疑惑或发现了bug，欢迎提issue或直接通过[主页邮箱](https://hanyiton.github.io/)讨论，我会在空闲时间尽量解决！
 
 ## 模型开源
 模型权重已开源至huggingface，使用前请确认是否与训练数据集对应，[点此跳转](https://huggingface.co/Hanyiton/VAA-CSEC/tree/main)。
