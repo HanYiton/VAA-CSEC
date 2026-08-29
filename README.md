@@ -30,7 +30,7 @@ VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47
 
 若想从0开始创建数据，请参考论文中的3.3 CoT Distillation以及Appendix C，但由于大模型生成的不稳定性，新数据可能会与论文有一定差别。
 
-**由于NaSGEC-Exam初始数据并非alpaca格式，暂时还没想到好的还原方法，若有需要可以联系我获取蒸馏出的思维链部分。
+**由于NaSGEC-Exam初始数据并非alpaca格式，暂时还没想到好的还原方法，若有需要可以联系我获取蒸馏出的思维链部分。**
 
 ## SFT训练
 请参考[LLaMAFactory官方文档](https://llamafactory.readthedocs.io/en/latest/)的标准训练流程，所使用模型以及超参数设置均在论文Experiment部分说明。
