@@ -197,10 +197,12 @@ Paper RL settings: LoRA rank `8`, batch size `8` (2 GPUs × per-device `4`), lea
 
 Both scripts run inference and ChERRANT evaluation in one pass. Use `--voting_samples 32 --voting_temperature 1.0` for the self-consistency (32-vote) setting.
 
+The released checkpoint at `../model` is trained **only on CSED-C**; it is not the NaSGEC-Exam checkpoint.
+
 ```bash
 # CSED-C (or MuCGEC)
 python scripts/CSED_test.py \
-    --model_path <MODEL_DIR> \
+    --model_path ../model \
     --input <test.json> \
     --output <pred.jsonl> \
     --use_vllm \
@@ -209,7 +211,7 @@ python scripts/CSED_test.py \
 
 # NaSGEC-Exam with official M2 references
 python scripts/NaSGEC_test.py \
-    --model_path <MODEL_DIR> \
+    --model_path ../model \
     --input <nasgec.exam.test.input> \
     --reference_m2 <nasgec.exam.test.m2> \
     --output <pred.jsonl> \

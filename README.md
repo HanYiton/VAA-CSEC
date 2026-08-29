@@ -25,6 +25,11 @@ Under 32-vote decoding, VAA-CSEC reaches **47.72% F0.5 on CSED-C** (highest reca
 | --- | --- |
 | `YuYi/` | Main pipeline: task-specific reward function, GLPO plugin, training configs, and ChERRANT-based inference/evaluation scripts. See [`YuYi/README.md`](YuYi/README.md). |
 | `LLaMAFactory/` | [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), used for the SFT stage. |
+| `model/` | Released VAA-CSEC checkpoint trained only on CSED-C (~8.66 GB, bf16 safetensors). See [`model/README.md`](model/README.md). |
+
+## Model
+
+The released checkpoint is in [`model/`](model/). It is the VAA-CSEC (GLPO) model **trained only on the CSED-C training set** — it was not trained on NaSGEC-Exam. Weights are HuggingFace `safetensors` in `bfloat16` (~8.66 GB). See [`model/README.md`](model/README.md).
 
 ## Quick start
 
@@ -39,7 +44,7 @@ llamafactory-cli train examples/train_lora/qwen3.5_lora_sft.yaml
 cd ../../YuYi
 
 # 3) Inference + ChERRANT evaluation (self-consistency, 32 votes)
-python scripts/CSED_test.py --model_path <MODEL> --input <test.json> \
+python scripts/CSED_test.py --model_path ../model --input <test.json> \
     --output <pred.jsonl> --use_vllm \
     --cherrant_dir MuCGEC/scorers/ChERRANT \
     --voting_samples 32 --voting_temperature 1.0
