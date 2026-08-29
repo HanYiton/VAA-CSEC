@@ -2,7 +2,7 @@
 -----------------
 **VAA-CSEC** 是一个面向中文语义纠错任务的多阶段训练框架，它结合了CoT蒸馏、监督微调（SFT）、强化学习（RL）和自一致性解码（self-consistency）。 在强化学习阶段，我们进一步引入了GLPO，它根据个体展开奖励与投票聚合组奖励之间的差距重新分配GRPO优势，使强化学习训练目标与推理时使用的自一致性目标对齐。
 
-在CSED-C和NaSGEC-Exam数据集上的实验表明，VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47.72%，在所有方法中实现了最高的召回率42.15%，并在NaSGEC-Exam数据集上创造了41.55%的F0.5值的新最佳结果。¹
+在CSED-C和NaSGEC-Exam数据集上的实验表明，VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47.72%，在所有方法中实现了最高的召回率42.15%，并在NaSGEC-Exam数据集上创造了41.55%的F0.5值的新最佳结果。
 
 ## 来自作者
 大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性和可复现性较差，尽管现在有所改进，但可能还存在各种问题。若大家复现过程中有任何问题，欢迎提issue或直接通过[作者邮箱](20231003317@mail.gdufs.edu.cn)讨论
@@ -20,7 +20,7 @@
 ## 数据处理
 以CSED-C为例，蒸馏出的思维链保存在data\CSED-C\cot_sft_deidentified.json
 
-为避免侵权，请自行前往[CSED-C仓库](https://github.com/wyxstriker/CSED/tree/main/CSED-C)下载原数据，然后通过YuYi\scripts\deidentify_cot_sft.py还原为SFT训练数据。
+为避免侵权，请自行前往[CSED-C仓库](https://github.com/wyxstriker/CSED/tree/main/CSED-C)下载原数据，然后通过YuYi\scripts\build_alpaca_sft.py还原为SFT训练数据。
 
 若想从0开始创建数据，请参考论文中的3.3 CoT Distillation以及Appendix C，但由于大模型生成的不稳定性，新数据可能会与论文有一定差别。
 
