@@ -18,7 +18,7 @@ If you encounter any problems during reproduction or discover a bug, please feel
 
 ## Model Release
 
-The model trained on the CSED-C dataset has been released on Hugging Face. [Click here to access the model](https://huggingface.co/Hanyiton/VAA-CSEC/tree/main)
+The model trained on the CSED-C dataset has been released on Hugging Face. [Click here to access the model](https://huggingface.co/Hanyiton/VAA-CSEC/tree/main).
 
 ## Environment Setup
 
