@@ -36,4 +36,4 @@ VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47
 请参考LLaMAFactory官方文档的标准训练流程，所使用模型以及超参数设置均在论文Experiment部分说明。
 
 ## GRPO/GLPO训练
-详细流程请参考YuYi\README.md
+详细流程请参考[YuYi\README.md](https://github.com/HanYiton/VAA-CSEC/blob/main/YuYi/README.md)
