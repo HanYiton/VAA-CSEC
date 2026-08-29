@@ -53,7 +53,7 @@ If you would like to create the data from scratch, please refer to **Section 3.3
 
 ## SFT Training
 
-Please follow the standard training procedure provided in the official **LLaMAFactory** documentation.
+Please follow the standard training procedure provided in the [official **LLaMAFactory** documentation](https://llamafactory.readthedocs.io/en/latest/).
 
 The model configuration and hyperparameter settings used in our experiments are described in the **Experiments** section of the paper.
 
