@@ -14,7 +14,7 @@ Experiments on **CSED-C** and **NaSGEC-Exam** show that VAA-CSEC outperforms all
 
 Hello everyone! Since the framework was developed incrementally through a series of experiments, the readability of the original implementation was relatively poor. To facilitate reproduction, I substantially refactored the codebase before open-sourcing it. However, the refactoring may have introduced issues that I have not yet discovered, such as inconsistent paths or missing code.
 
-If you encounter any problems during reproduction or discover a bug, please feel free to open an issue or contact me directly via [email](mailto:20231003317@mail.gdufs.edu.cn). I will try my best to address the issue when I have time.
+If you encounter any problems during reproduction or discover a bug, please feel free to open an issue or contact me directly via email. I will try my best to address the issue when I have time.
 
 ## Model Release
 
