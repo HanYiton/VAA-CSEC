@@ -1,4 +1,4 @@
-# <img src=".bullseye2.png" width="50"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
+# <img src="bullseye2.png" width="50"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 -----------------
 **VAA-CSEC** 是一个面向中文语义纠错任务的多阶段训练框架，它结合了CoT蒸馏、监督微调（SFT）、强化学习（RL）和自一致性解码（self-consistency）。
 
