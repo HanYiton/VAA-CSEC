@@ -17,7 +17,7 @@ VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47
 ## 环境配置
 推荐创建两个conda环境，分别进行LLaMAFactory的SFT训练和ms-swift的GRPO/GLPO训练
 
-环境创建流程请分别参考LLaMAFactory和ms-swift的官方文档。
+环境创建流程请分别参考[LLaMAFactory](https://llamafactory.readthedocs.io/en/latest/)和[ms-swift](https://swift.readthedocs.io/en/latest/GetStarted/Quick-start.html)的官方文档。
 
 你可能会用到：
 1. ms-swift官方文档中[Qwen3.5最佳实践说明](https://swift.readthedocs.io/zh-cn/latest/BestPractices/Qwen3_5-Best-Practice.html#rl)
