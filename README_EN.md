@@ -59,8 +59,4 @@ The model configuration and hyperparameter settings used in our experiments are 
 
 ## GRPO / GLPO Training
 
-For the detailed training procedure, please refer to:
-
-```text
-YuYi/README.md
-```
+For the detailed training procedure, please refer to [YuYi/README.md](https://github.com/HanYiton/VAA-CSEC/blob/main/YuYi/README.md)
