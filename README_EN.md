@@ -1,4 +1,4 @@
-[English](README_EN.md) | [中文](README.md)
+[中文](README.md) | [English](README_EN.md)
 
 # <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
