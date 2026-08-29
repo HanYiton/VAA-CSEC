@@ -4,7 +4,7 @@
 VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47.72%，在所有方法中实现了最高的召回率42.15%，并在NaSGEC-Exam数据集上创造了41.55%的F0.5值的新SOTA。
 
 <p align="center">
-  <img src=".framework.png" alt="VAA-CSEC Framework" width="900">
+  <img src="FrameWork.png" alt="VAA-CSEC Framework" width="900">
 </p>
 ## 🙌来自作者
 大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性较差。为了方便复现，我在开源前进行了较大范围的重构，但可能因此产生各种未能发现的问题，如路径不一致、缺少部分代码等。若大家复现过程中有任何疑惑或发现了bug，欢迎提issue或直接通过[作者邮箱](20231003317@mail.gdufs.edu.cn)讨论，我会在空闲时间尽量解决！
