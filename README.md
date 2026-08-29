@@ -3,6 +3,9 @@
 
 VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47.72%，在所有方法中实现了最高的召回率42.15%，并在NaSGEC-Exam数据集上创造了41.55%的F0.5值的新SOTA。
 
+<p align="center">
+  <img src=".framework.png" alt="VAA-CSEC Framework" width="900">
+</p>
 ## 🙌来自作者
 大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性较差。为了方便复现，我在开源前进行了较大范围的重构，但可能因此产生各种未能发现的问题，如路径不一致、缺少部分代码等。若大家复现过程中有任何疑惑或发现了bug，欢迎提issue或直接通过[作者邮箱](20231003317@mail.gdufs.edu.cn)讨论，我会在空闲时间尽量解决！
 
@@ -13,8 +16,7 @@ VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47
 
 你可能会用到：
 1. ms-swift官方文档中[Qwen3.5最佳实践说明](https://swift.readthedocs.io/zh-cn/latest/BestPractices/Qwen3_5-Best-Practice.html#rl)
-
-2. 对于Qwen3.5中vllm与transformers版本不兼容问题，可见[issue](https://github.com/modelscope/ms-swift/issues/8188)
+2. 对于Qwen3.5中vllm与transformers版本不兼容问题，可见[ms-swift/issues/8188](https://github.com/modelscope/ms-swift/issues/8188)
 
 ## 数据处理
 以CSED-C为例，蒸馏出的思维链保存在data\CSED-C\cot_sft_deidentified.json
@@ -23,7 +25,7 @@ VAA-CSEC在CSED-C数据集上优于所有基于LLM的基线方法，F0.5值为47
 
 若想从0开始创建数据，请参考论文中的3.3 CoT Distillation以及Appendix C，但由于大模型生成的不稳定性，新数据可能会与论文有一定差别。
 
-**由于NaSGEC数据初始并非alpaca格式，暂时还没想到好的还原方法，若有需要可以联系我获取蒸馏出的思维链部分。
+**由于NaSGEC-Exam初始数据并非alpaca格式，暂时还没想到好的还原方法，若有需要可以联系我获取蒸馏出的思维链部分。
 
 ## SFT训练
 请参考LLaMAFactory官方文档的标准训练流程，所使用模型以及超参数设置均在论文Experiment部分说明。
