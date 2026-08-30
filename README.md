@@ -15,10 +15,6 @@
   <sup>3</sup>College of Computer Science and Technology, National University of Defense Technology
 </p>
 
-<p align="center">
-  <sup>†</sup>Corresponding author
-</p>
-
 **VAA-CSEC** 是一个面向中文语义纠错任务的多阶段训练框架，结合了 CoT 蒸馏、监督微调（SFT）、强化学习（RL）和自一致性解码（self-consistency）。
 
 在强化学习阶段，我们进一步引入 **GLPO (Group-Level Relative Policy Optimization)**，根据个体 rollout 奖励与投票聚合组奖励之间的差距重新分配 GRPO 优势，使强化学习训练目标与推理阶段使用的自一致性目标保持一致。
