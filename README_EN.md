@@ -19,10 +19,6 @@ If you encounter any problems during reproduction or discover a bug, please feel
 <p align="center">
   <sup>†</sup>Corresponding author
 </p>
-<p align="center">
-  <a href="mailto:20231003317@mail.gdufs.edu.cn">20231003317@mail.gdufs.edu.cn</a> ·
-  <a href="mailto:neakail@outlook.com">neakail@outlook.com</a>
-</p>
 
 **VAA-CSEC** is a multi-stage training framework for Chinese Semantic Error Correction (CSEC), combining Chain-of-Thought (CoT) distillation, Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), and self-consistency decoding. During the reinforcement learning stage, we introduce **Group-Level Relative Policy Optimization (GLPO)**, which reallocates GRPO advantages according to the margin between individual rollout rewards and the vote-aggregated group reward, aligning the RL training objective with the self-consistency objective used at inference time.
 
