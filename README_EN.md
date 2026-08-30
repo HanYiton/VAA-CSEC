@@ -8,6 +8,25 @@ If you encounter any problems during reproduction or discover a bug, please feel
 
 # <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
+<p align="center">
+  <b>Yitong Han<sup>1</sup>, Nankai Lin<sup>1,2</sup><sup>†</sup>, Juan Luo<sup>1</sup>, Hongyan Wu<sup>3</sup>, Lianxi Wang<sup>1</sup>, Shengyi Jiang<sup>1</sup></b>
+</p>
+
+<p align="center">
+  <sup>1</sup>School of Information Science and Technology, Guangdong University of Foreign Studies<br>
+  <sup>2</sup>Guangdong Engineering Research Center of Data Security Governance and Privacy Computing<br>
+  <sup>3</sup>College of Computer Science and Technology, National University of Defense Technology
+</p>
+
+<p align="center">
+  <sup>†</sup>Corresponding author
+</p>
+
+<p align="center">
+  <a href="mailto:20231003317@mail.gdufs.edu.cn">20231003317@mail.gdufs.edu.cn</a> ·
+  <a href="mailto:neakail@outlook.com">neakail@outlook.com</a>
+</p>
+
 **VAA-CSEC** is a multi-stage training framework for Chinese Semantic Error Correction (CSEC), combining Chain-of-Thought (CoT) distillation, Supervised Fine-Tuning (SFT), Reinforcement Learning (RL), and self-consistency decoding. During the reinforcement learning stage, we introduce **Group-Level Relative Policy Optimization (GLPO)**, which reallocates GRPO advantages according to the margin between individual rollout rewards and the vote-aggregated group reward, aligning the RL training objective with the self-consistency objective used at inference time.
 
 Experiments on **CSED-C** and **NaSGEC-Exam** show that VAA-CSEC outperforms all LLM-based baselines on CSED-C with an F0.5 of **47.72%**, achieves the highest recall of **42.15%** among all methods, and establishes a new state of the art of **41.55% F0.5** on NaSGEC-Exam.
