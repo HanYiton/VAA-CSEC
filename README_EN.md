@@ -1,6 +1,6 @@
 [中文](README.md) | [English](README_EN.md)
 
-## 🙌 A Note from the Authors
+## 🙌 A Note from the Author
 
 Hello everyone! Since the framework was developed incrementally through a series of experiments, the readability of the original implementation was relatively poor. To facilitate reproduction, I substantially refactored the codebase before open-sourcing it. However, the refactoring may have introduced issues that I have not yet discovered, such as inconsistent paths or missing code.
 
