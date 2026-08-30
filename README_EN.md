@@ -6,7 +6,7 @@ Hello everyone! Since the framework was developed incrementally through a series
 
 If you encounter any problems during reproduction or discover a bug, please feel free to open an issue or contact me directly via email. I will try my best to address the issue when I have time.
 
-# <img src="bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
+# <img src="assets/bullseye2.png" width="40"> VAA-CSEC：Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
 <p align="center">
   <b>Yitong Han<sup>1</sup>, Nankai Lin<sup>1,2</sup><sup>†</sup>, Juan Luo<sup>1</sup>, Hongyan Wu<sup>3</sup>, Lianxi Wang<sup>1</sup>, Shengyi Jiang<sup>1</sup></b>
@@ -22,7 +22,7 @@ If you encounter any problems during reproduction or discover a bug, please feel
 Experiments on **CSED-C** and **NaSGEC-Exam** show that VAA-CSEC outperforms all LLM-based baselines on CSED-C with an F0.5 of **47.72%**, achieves the highest recall of **42.15%** among all methods, and establishes a new state of the art of **41.55% F0.5** on NaSGEC-Exam.
 
 <p align="center">
-  <img src="FrameWork.png" alt="VAA-CSEC Framework" width="900">
+  <img src="assets/FrameWork.png" alt="VAA-CSEC Framework" width="900">
 </p>
 
 ## Model Release
