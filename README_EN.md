@@ -11,17 +11,14 @@ If you encounter any problems during reproduction or discover a bug, please feel
 <p align="center">
   <b>Yitong Han<sup>1</sup>, Nankai Lin<sup>1,2</sup><sup>†</sup>, Juan Luo<sup>1</sup>, Hongyan Wu<sup>3</sup>, Lianxi Wang<sup>1</sup>, Shengyi Jiang<sup>1</sup></b>
 </p>
-
 <p align="center">
   <sup>1</sup>School of Information Science and Technology, Guangdong University of Foreign Studies<br>
   <sup>2</sup>Guangdong Engineering Research Center of Data Security Governance and Privacy Computing<br>
   <sup>3</sup>College of Computer Science and Technology, National University of Defense Technology
 </p>
-
 <p align="center">
   <sup>†</sup>Corresponding author
 </p>
-
 <p align="center">
   <a href="mailto:20231003317@mail.gdufs.edu.cn">20231003317@mail.gdufs.edu.cn</a> ·
   <a href="mailto:neakail@outlook.com">neakail@outlook.com</a>
