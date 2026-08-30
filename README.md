@@ -1,7 +1,7 @@
 [中文](README.md) | [English](README_EN.md)
 
 ## 🙌来自作者
-大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性较差。为了方便复现，我在开源前进行了较大范围的重构，但可能因此产生各种未能发现的问题，如路径不一致、缺少部分代码等。若大家复现过程中有任何疑惑或发现了bug，欢迎提issue或直接通过[主页邮箱](https://hanyiton.github.io/)讨论，我会在空闲时间尽量解决！
+大家好，由于本框架流程是在一步一步探索中实现的，因此最初版本的可读性较差。为了方便复现，我在开源前进行了较大范围的重构，但可能因此产生各种未能发现的问题，如路径不一致、缺少部分代码等。若大家复现过程中有任何疑惑或发现了bug，欢迎提issue或直接通过作者邮箱讨论，我会在空闲时间尽量解决！
 
 # <img src="bullseye2.png" width="40"> VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction
 
