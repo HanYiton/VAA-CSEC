@@ -69,3 +69,19 @@ The model configuration and hyperparameter settings used in our experiments are 
 ## GRPO / GLPO Training
 
 For the detailed training procedure, please refer to [YuYi/README.md](https://github.com/HanYiton/VAA-CSEC/blob/main/YuYi/README.md)
+
+## Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@misc{han2026vaacsecvoteguidedadvantageallocation,
+      title={VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction}, 
+      author={Yitong Han and Nankai Lin and Juan Luo and Hongyan Wu and Lianxi Wang and Shengyi Jiang},
+      year={2026},
+      eprint={2609.36804},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.36804}, 
+}
+```
