@@ -53,3 +53,19 @@ VAA-CSEC 在 **CSED-C** 数据集上优于所有基于 LLM 的基线方法，取
 
 ## GRPO/GLPO训练
 详细流程请参考[YuYi\README.md](https://github.com/HanYiton/VAA-CSEC/blob/main/YuYi/README.md)
+
+## 引用
+
+如果你认为这篇论文有所帮助，请引用:
+
+```bibtex
+@misc{han2026vaacsecvoteguidedadvantageallocation,
+      title={VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction}, 
+      author={Yitong Han and Nankai Lin and Juan Luo and Hongyan Wu and Lianxi Wang and Shengyi Jiang},
+      year={2026},
+      eprint={2609.36804},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.36804}, 
+}
+```
