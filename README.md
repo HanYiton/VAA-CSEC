@@ -59,13 +59,27 @@ VAA-CSEC 在 **CSED-C** 数据集上优于所有基于 LLM 的基线方法，取
 如果你认为这篇论文有所帮助，请引用:
 
 ```bibtex
-@misc{han2026vaacsecvoteguidedadvantageallocation,
-      title={VAA-CSEC: Vote-guided Advantage Allocation for Chinese Semantic Error Correction}, 
-      author={Yitong Han and Nankai Lin and Juan Luo and Hongyan Wu and Lianxi Wang and Shengyi Jiang},
-      year={2026},
-      eprint={2609.36804},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2609.36804}, 
+@inproceedings{han-etal-2026-vaa,
+    title = "{VAA}-{CSEC}: Vote-guided Advantage Allocation for {C}hinese Semantic Error Correction",
+    author = "Han, Yitong  and
+      Lin, Nankai  and
+      Luo, Juan  and
+      Wu, Hongyan  and
+      Wang, Lianxi  and
+      Jiang, Shengyi",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Junyi Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.2562/",
+    doi = "10.18653/2026.emnlp-main.2562",
+    pages = "58217--58232",
+    ISBN = "979-8-89176-459-0",
+    abstract = "Chinese Semantic Error Correction (CSEC) targets semantic errors in Chinese text, which are typically more subtle and complex than spelling and grammatical errors but remain relatively underexplored. Existing LLM-based approaches face two recurring obstacles in this task: over-correction, and unclear interaction between Chain-of-Thought (CoT) reasoning and self-consistency decoding, such that the benefits brought by CoT cannot be reliably transferred to final corrections. We propose Vote-guided Advantage Allocation for CSEC (VAA-CSEC), a multi-stage framework that combines CoT distillation, Supervised Fine-Tuning (SFT), Reinforcement Learning (RL) and self-consistency decoding. During RL, we design a task-specific reward function that directly aligned with the minimal-editing principle of CSEC. We further introduce Group-Level Relative Policy Optimization (GLPO), which reallocates GRPO advantages according to the margin between individual rollout rewards and the vote-aggregated group reward, aligning the RL training objective with the self-consistency objective used at inference time. Experiments on CSED-C and NaSGEC-Exam show that VAA-CSEC outperforms all LLM-based baselines on CSED-C with an F0.5 of 47.72{\%}, achieves the highest recall of 42.15{\%} among all methods, and establishes a new state of the art of 41.55{\%} F0.5 on NaSGEC-Exam."
 }
 ```
